@@ -53,6 +53,7 @@ JSON responses are displayed below each button.
 ---
 
 ### Project Structure
+```
 dataflow-analyzer/
 ├─ backend/
 │ ├─ app.py
@@ -69,7 +70,7 @@ dataflow-analyzer/
 │ └─ package.json
 ├─ .gitignore
 └─ README.md
-
+```
 ### Notes
 
 Frontend communicates with backend at `http://127.0.0.1:5000`. Update `ApiService` if the backend URL changes. Currently, training and detection use **hardcoded sample data**. User input and more advanced ML models will be added in future updates. CORS is enabled in the backend to allow requests from the frontend.
