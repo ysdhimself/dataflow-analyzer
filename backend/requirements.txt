@@ -1,0 +1,7 @@
+flask[async]
+flask-cors
+flask-socketio
+scikit-learn
+numpy
+pandas
+pytest

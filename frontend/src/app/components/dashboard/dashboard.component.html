@@ -1,0 +1,9 @@
+<h2>DataFlow Analyzer Dashboard</h2>
+
+<button (click)="trainModel()">Train Model</button>
+<p *ngIf="trainResult">{{ trainResult | json }}</p>
+
+<hr>
+
+<button (click)="detectPoint()">Detect Point</button>
+<p *ngIf="detectResult">{{ detectResult | json }}</p>
