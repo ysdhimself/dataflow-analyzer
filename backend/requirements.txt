@@ -1,7 +1,7 @@
-flask[async]
-flask-cors
-flask-socketio
-scikit-learn
-numpy
-pandas
-pytest
+Flask==2.3.2
+Flask-Cors
+scikit-learn==1.7.1
+numpy==2.3.2
+joblib==1.3.2
+pydantic
+pytest==8.2.0

@@ -1,7 +1,10 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideHttpClient } from '@angular/common/http';
 import { AppComponent } from './app/app.component';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 bootstrapApplication(AppComponent, {
-  providers: [provideHttpClient()]  // <-- Provide HttpClient here
-}).catch(err => console.error(err));
+  providers: [
+    provideHttpClient(withInterceptorsFromDi())
+  ]
+})
+.catch(err => console.error(err));
